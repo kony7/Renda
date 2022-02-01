@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Renda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl1-IO-JCv">
+                                <rect key="frame" x="186" y="356.5" width="42" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B74-dT-Qmb">
+                                <rect key="frame" x="175" y="385.5" width="64" height="125"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="104"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCX-V1-k15">
+                                <rect key="frame" x="82" y="510.5" width="250" height="250"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.0" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="udM-m6-KvY"/>
+                                    <constraint firstAttribute="width" constant="250" id="uxc-8K-C2C"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TAP">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="64"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKD-tZ-dhE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eCX-V1-k15" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1qc-ep-7eF"/>
+                            <constraint firstItem="B74-dT-Qmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3To-OZ-GAA"/>
+                            <constraint firstItem="B74-dT-Qmb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FrT-RJ-ZD6"/>
+                            <constraint firstItem="B74-dT-Qmb" firstAttribute="top" secondItem="Bl1-IO-JCv" secondAttribute="bottom" id="QJw-wH-uZY"/>
+                            <constraint firstItem="Bl1-IO-JCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bk3-di-B6k"/>
+                            <constraint firstItem="eCX-V1-k15" firstAttribute="top" secondItem="B74-dT-Qmb" secondAttribute="bottom" id="bkn-h4-Ahg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="B74-dT-Qmb" id="4rU-SB-0l9"/>
+                        <outlet property="tapButton" destination="eCX-V1-k15" id="jnW-SQ-Rq0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="84"/>
+        </scene>
+    </scenes>
+</document>
